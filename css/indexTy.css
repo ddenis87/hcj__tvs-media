@@ -1,0 +1,607 @@
+.uh1 {
+  margin: 0px;
+  color: gray;
+  font-size: 24px;
+}
+
+.uh2 {
+  margin: 3px;
+  color: gray;
+  font-size: 22px;
+  text-align: left;
+}
+
+.gridTy {
+  display: grid;
+  grid-template-areas: "gTopBanner gTopBanner"
+                       "gMenu gSideBar"
+                       "gSearch gSideBar"
+                       "gTitle gSideBar"
+                       "generalTy gSideBar";
+  grid-template-rows: auto 70px 120px 40px auto;
+  grid-template-columns: 79% 21%;
+  /* max-width: 1920px; */
+  /* max-width: 1190px; */
+  max-width: 1920px;
+  /* min-width: 600px; */
+  width: 99%;
+  border: 0px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 50px;
+}
+
+.gTopBanner {
+  width: 100%;
+  grid-area: gTopBanner;
+  height: auto;
+  border: 0px solid black;
+  text-indent: 0px;
+}
+
+.gTopBanner img {
+  width: 100%;
+  /* min-width: 400px; */
+  height: auto;
+  border: 0px solid black;
+  margin: 0px;
+}
+
+.gMenu {
+  display: block;
+  width: 100%;
+  grid-area: "gMenu";
+  border: 0px solid black;
+  padding-right: 10px;
+}
+
+.ulTopMenu li {
+  display: inline-block;
+  width: auto;
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+  /* border: 0px solid black; */
+}
+
+.liSelected {
+  border-bottom: 4px solid grey ;
+  font-weight: bold;
+  color: grey;
+}
+
+.liUnselected {
+  border: 0px solid black;
+}
+
+
+.gTitle {
+  display: block;
+  grid-area: "gTitle";
+  border: 0px solid black;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+.gTitle h1 {
+  margin: 3px;
+  color: grey;
+}
+
+.gSideBar {
+  grid-area: gSideBar;
+  display: block;
+  border: 0px solid black;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 0px;
+  text-indent: 0px;
+}
+
+.gSideBar {
+  text-align: center;
+}
+
+.sidebarOther {
+  display: block;
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0px;
+}
+
+.sidebarPartner {
+  display: block;
+  margin-top: 10px;
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0px;
+}
+
+.sidebarLogo {
+  max-width: 160px;
+  width: 99%;
+  max-height: 144px;
+  height: 99%;
+}
+
+/* .sidebarLogo:hover {
+  transform: scale(1.1);
+  border: 1px solid grey;
+} */
+
+#sidebarImg {
+  max-width: 212px;
+  width: 98%;
+  max-height: 182px;
+  height: 98%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.sidebarPrice {
+  display: block;
+  color: red;
+  font-size: 16px;
+  text-align: center !important;
+}
+
+.sidebarNote {
+  display: block;
+  color: grey;
+  font-size: 16px;
+  text-align: center !important;
+}
+
+.sidebarH2 {
+  margin: 3px;
+  margin-top: 10px;
+  color: gray;
+  font-size: 20px;
+  text-align: left;
+}
+
+.search {
+  grid-area: gSearch;
+  border: 0px solid black;
+  padding-right: 10px;
+}
+
+#inputSearch { /* .search input { */
+  display: block;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.search span {
+  display: block;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.buttonSearch {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+  background-color: #152848;
+  box-shadow: 2px 2px 2px;
+  text-align: center;
+  box-sizing: border-box;
+  background-image: url("../img/out-link-hover.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 98% 50%;
+  transition: .55s opacity;
+}
+
+.buttonSearch:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.generalTy {
+  grid-area: generalTy;
+  /* width: 100%; */
+  padding-right: 20px;
+}
+
+.selectTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 0px solid black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.plitka {
+  position: relative;
+  display: block;
+  width: 262px;
+  height: 275px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  background-color: white;
+  margin: 12px;
+  text-align: center;
+  text-indent: 0px !important;
+}
+
+.plitka-cat {
+  position: relative;
+  display: block;
+  width: 262px;
+  height: 220px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  background-color: white;
+  margin: 12px;
+  text-align: center;
+  text-indent: 0px !important;
+}
+
+#divimg{display:flex ; height: 232px; align-items: center; justify-content: center;}
+
+.plitka img, .plitka-cat img {
+  display: inline-block;
+  border-radius: 5px 5px 0px 0px;
+  width: auto;
+  max-width: 262px;
+  height: auto;
+  max-height: 232px;
+  border: 0px;
+  margin: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 0;
+  text-indent: 0px !important;
+  /* text-align: center; */
+  /* vertical-align: bottom; */
+}
+
+.plitka:hover > .note {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+.figcaption {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  color: grey;
+  border-top: 1px solid grey;
+}
+
+.note {
+  position: absolute;
+  display: block;
+  background-color: lightskyblue;
+  color: black;
+  top: 0px;
+  left: 0px;
+  width: 252px;
+  padding: 5px;
+  margin-right: 0px;
+  border-radius: 5px 5px 0px 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .55s opacity, .55s visibility;
+  text-align: center;
+  line-height: normal;
+}
+
+.noteNameLong {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.noteNameKA {
+  font-size: 13px;
+  text-align: left;
+  color: blue;
+}
+
+.noteDiscription {
+  font-size: 13px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.notePrice {
+  /* text-transform: uppercase; */
+  margin: 0px 0px 10px 0px;
+  font-weight: bold;
+  color: red;
+  font-size: 14px;
+}
+
+.noteOldPrice {
+  /* text-transform: uppercase; */
+  margin: 0px 0px 5x 0px;
+  /* font-weight: bold; */
+  color: grey;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.noteCat {
+  background-color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  width: auto;
+  max-width: 250px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.plitkaLogo {
+  position: relative;
+  width: 190px;
+  height: 235px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  margin: 10px;
+}
+
+.plitkaLogo img {
+  display: block;
+  width: 160px;
+  height: 144px !important; 
+  margin: 15px;
+  border: 1px solid grey;
+  padding: 0px;
+}
+
+.figcaptionLogo {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  color: grey;
+  border-top: 1px solid grey;
+}
+
+.vHidden {
+  /* visibility: hidden; */
+  display: none;
+}
+
+.gridTy a:link {text-decoration: none; color: black;}
+.gridTy a:visited {text-decoration: none; color: black;}
+.gridTy a:active {text-decoration: none; color: black;}
+.gridTy a:hover {text-decoration: none; color: black;}
+
+.exampleLink a:link {text-decoration: underline; font-weight: bold; color: lightskyblue;}
+.exampleLink a:visited {text-decoration: underline; font-weight: bold; color: lightskyblue;}
+.exampleLink a:active {text-decoration: underline; font-weight: bold; color: lightskyblue;}
+.exampleLink a:hover {text-decoration: underline; font-weight: bold; color: lightskyblue;}
+
+@media only screen and (max-width: 1000px), only screen and (max-device-width: 1000px)  {
+  .gridTy {
+    display: grid;
+    grid-template-areas: "gTopBanner"
+                         "gTitle"
+                         "gMenu"
+                         "gSearch"
+                         "generalTy"
+                         "gSideBar";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    width: 99%;
+    border: 0px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .plitka {
+    position: relative;
+    display: block;
+    width: 162px;
+    height: 175px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    background-color: white;
+    margin: 12px;
+    text-align: center;
+    text-indent: 0px !important;
+  }
+  
+  .plitka-cat {
+    position: relative;
+    display: block;
+    width: 162px;
+    height: 175px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    background-color: white;
+    margin: 12px;
+    text-align: center;
+    text-indent: 0px !important;
+  }
+  
+  #divimg{display:flex ; height: 132px; align-items: center; justify-content: center;}
+
+  #plitkaimg {
+    display: block;
+    border-radius: 5px 5px 0px 0px;
+    max-width: 162px !important;
+    width: auto !important;
+    max-height: 132px !important ;
+    height: auto !important;
+    border: 0px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .figcaption {
+    display: block;
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 10px;
+    color: grey;
+  }
+  
+  .note {
+    position: absolute;
+    display: block;
+    background-color: lightskyblue;
+    color: black;
+    top: 0px;
+    left: 0px;
+    width: 152px;
+    padding: 5px;
+    margin-right: 0px;
+    border-radius: 5px 5px 0px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .55s opacity, .55s visibility;
+    text-align: center;
+    line-height: normal;
+  }
+  
+  .noteNameLong {
+    font-size: 8px;
+    text-align: justify;
+  }
+  
+  .noteNameKA {
+    font-size: 8px;
+    text-align: left;
+    color: blue;
+  }
+
+  .noteDiscription {
+    font-size: 8px;
+    text-align: justify;
+    margin-bottom: 5px;
+  }
+  
+  .notePrice {
+    /* text-transform: uppercase; */
+    margin: 0px 0px 2px 0px;
+    font-weight: bold;
+    color: red;
+    font-size: 9px;
+  }
+  
+  .noteOldPrice {
+    /* text-transform: uppercase; */
+    margin: 0px 0px 2x 0px;
+    /* font-weight: bold; */
+    color: grey;
+    text-decoration: line-through;
+    font-size: 7px;
+  }
+  
+  .noteCat {
+    background-color: white;
+    font-size: 6px !important;
+    text-transform: uppercase;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 2px;
+    
+    padding: 5px;
+    width: auto;
+    max-width: 250px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .noteCat a {font-size: 6px !important;}
+
+  .plitkaLogo {
+    position: relative;
+    width: 190px;
+    height: 235px !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    margin: 10px;
+  }
+  
+  #plitkaLogoimg {
+    display: block;
+    width: 160px;
+    height: 144px !important; 
+    margin: 15px;
+    border: 1px solid grey;
+    padding: 0px;
+  }
+
+  #sidebarLogo {
+    max-width: 160px !important;
+    width: 99% !important;
+    max-height: 144px !important;
+    height: 99% !important;
+  }
+
+  #sidebarImg {
+    max-width: 162px;
+    width: 98% !important;
+    max-height: 132px;
+    height: 98% !important;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+  
+  .sidebarPrice {
+    display: block;
+    color: red;
+    font-size: 11px;
+  }
+  
+  .sidebarNote {
+    display: block;
+    color: grey;
+    font-size: 11px;
+  }
+  
+  .sidebarH2 {
+    margin: 3px;
+    margin-top: 10px;
+    color: gray;
+    font-size: 15px;
+    text-align: left;
+  }
+
+}

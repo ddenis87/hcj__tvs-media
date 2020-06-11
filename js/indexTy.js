@@ -14,7 +14,7 @@ let selectedTab = '';
 function loadPage() {
   
   let generalObgect = jsonRequest.response;
-  console.log(generalObgect);
+  //console.log(generalObgect);
   let textHTML;
   // баннер
   let urlTopBanner = Object.values(generalObgect.BannerTop_src[0]);
@@ -101,7 +101,7 @@ function sidebarParent(_mJson, _mTabName, _mOnClick) {
     let randomNum = Math.floor(Math.random() * ((catObject.length - 1) + 1 ));
     let sideBar = document.getElementById("gSideBar");
     let sidebarTab = document.createElement("div");
-    console.log(catObject[randomNum]);
+    //console.log(catObject[randomNum]);
     textHTML += `<h2 class="sidebarH2">${_mTabName}</h2>`;
     textHTML += `<div class="sidebarPartner">`;
     textHTML += `<a href="${catObject[randomNum].linkKAcontacts}"><img src="${catObject[randomNum].linkLogoFirmMidl}" class="sidebarLogo" id="sidebarLogo"></a>`;
@@ -169,7 +169,7 @@ function selectTab(_tabId, _tabName, _urlJSON) {
   jsonRequest.send();
   jsonRequest.onload = function() {
     let catObject = jsonRequest.response;
-    console.log(catObject);
+    //console.log(catObject);
     switch(_tabId) {
       case "catalog": {
         for (let i = 0; i < catObject.length; i++) {
